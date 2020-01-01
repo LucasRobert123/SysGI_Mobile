@@ -1938,11 +1938,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
       "projectName": "SysGI_Mobile.Android",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1963,8 +1963,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\source\\repos\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj"
+            "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj"
             }
           }
         }
