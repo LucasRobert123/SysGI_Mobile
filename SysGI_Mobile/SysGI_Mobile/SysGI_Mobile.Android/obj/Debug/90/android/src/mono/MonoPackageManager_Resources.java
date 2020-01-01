@@ -2,7 +2,9 @@ package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "SysGI_Mobile.Android.dll" comes first in this list. */
+		"SysGI_Mobile.Android.dll",
 		"FormsViewGroup.dll",
+		"SysGI_Mobile.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

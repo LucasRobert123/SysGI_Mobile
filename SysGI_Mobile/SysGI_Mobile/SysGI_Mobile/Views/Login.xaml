@@ -22,18 +22,18 @@
             </StackLayout>
             <StackLayout Padding="0,30,0,0" HorizontalOptions="FillAndExpand">
                 <Label  Text="Usuario" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"></Label>
-                <Entry FontSize="Medium" WidthRequest="200" HorizontalOptions="CenterAndExpand"></Entry>
+                <Entry FontSize="Medium" WidthRequest="300" HorizontalOptions="CenterAndExpand"></Entry>
                 <Label  Text="Senha" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"></Label >
-                <Entry FontSize="Medium" WidthRequest="200" HorizontalOptions="CenterAndExpand"></Entry>
+                <Entry FontSize="Medium" WidthRequest="300" HorizontalOptions="CenterAndExpand"></Entry>
             </StackLayout>
-            <StackLayout Padding="75,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+            <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                 <CheckBox Color="White"></CheckBox>
-                <Label Text="Manter-se conectado" TextColor="White" Padding="-5,6,0,0" FontAttributes="Bold" FontSize="Medium"></Label>
+                <Label Text="Manter-se conectado" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="0,3,0,0"></Label>
             </StackLayout>
-            <StackLayout Orientation="Vertical" Padding="20,0,0,0">
+            <StackLayout Orientation="Vertical" Padding="0,20,0,0" >
                 <Button Text="LOGAR" BackgroundColor="White" HorizontalOptions="Center" WidthRequest="150" BorderRadius="10"></Button>
             </StackLayout>
-            <StackLayout>
+            <StackLayout Padding="0,50,0,0">
                 <Label Text="Solicitar login" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium"></Label>
             </StackLayout>
         </StackLayout>
