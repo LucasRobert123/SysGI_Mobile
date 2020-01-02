@@ -1022,11 +1022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.iOS\\SysGI_Mobile.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.iOS\\SysGI_Mobile.iOS.csproj",
       "projectName": "SysGI_Mobile.iOS",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.iOS\\SysGI_Mobile.iOS.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.iOS\\SysGI_Mobile.iOS.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1047,8 +1047,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj"
+            "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj"
             }
           }
         }

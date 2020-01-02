@@ -573,11 +573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj",
       "projectName": "SysGI_Mobile",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

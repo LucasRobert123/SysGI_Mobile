@@ -11,3 +11,17 @@ C:\Users\Usuario\Desktop\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj
 C:\Users\Usuario\Desktop\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\ref\SysGI_Mobile.dll
 C:\Users\Usuario\Desktop\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.pdb
 C:\Users\Usuario\Desktop\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\bin\Debug\netstandard2.0\SysGI_Mobile.deps.json
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\bin\Debug\netstandard2.0\SysGI_Mobile.dll
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\bin\Debug\netstandard2.0\ref\SysGI_Mobile.dll
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\bin\Debug\netstandard2.0\SysGI_Mobile.pdb
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.dll
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\ref\SysGI_Mobile.dll
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.pdb
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\Views\CadastroDeUsuario.xaml.g.cs

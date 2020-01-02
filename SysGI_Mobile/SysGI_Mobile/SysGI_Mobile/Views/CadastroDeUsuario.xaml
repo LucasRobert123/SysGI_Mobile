@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Visual="Material"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SysGI_Mobile.Views.CadastroDeUsuario">
+
+    <StackLayout Padding="20,50,20,20" HorizontalOptions="Fill" BackgroundColor="Crimson">
+        <StackLayout Orientation="Vertical" Padding="30,0,30,0">
+            <Label HorizontalOptions="CenterAndExpand" Text="CADASTRO DE USUÁRIO" TextColor="White" FontAttributes="Bold" FontSize="25"></Label>
+            <Picker Title="CATEGORIA" TitleColor="White" FontSize="20" HeightRequest="70" TextColor="White">
+                <Picker.Items>
+                    <x:String>JUIZ</x:String>
+                    <x:String>ADVOGADO</x:String>
+                    <x:String>PROFESSOR</x:String>
+                    <x:String>PROMOTOR</x:String>
+                    <x:String>POLICIAL</x:String>
+                    <x:String>DELEGADO</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry Placeholder="Telefone" Keyboard="Telephone" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Entry Placeholder="E-mail" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Entry Placeholder="Confirmar E-mail" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Entry IsPassword="False" Placeholder="Senha" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Entry Placeholder="Confirmar Senha" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" IsPassword="True" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Button Text="SALVAR" TextColor="Black" CornerRadius="10" WidthRequest="200" BackgroundColor="White" FontAttributes="Bold" FontSize="18" HeightRequest="50"></Button>
+        </StackLayout>
+    </StackLayout>
+
+
+
+</ContentPage>
