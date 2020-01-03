@@ -10,8 +10,8 @@
     <StackLayout  Padding="20,80,10,10"	
                       HorizontalOptions="FillAndExpand"
                       BackgroundColor="Crimson">
-
         <StackLayout Orientation="Horizontal">
+            
             <Label HorizontalOptions="CenterAndExpand" Text="SysGI" TextColor="White" FontFamily="Century Gothic" FontAttributes="Bold">
                 <Label.FontSize>
                     <OnPlatform	x:TypeArguments="x:Double">

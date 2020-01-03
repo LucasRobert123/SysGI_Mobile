@@ -10,7 +10,7 @@ namespace SysGI_Mobile
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new CadastroDeUsuario();
         }
 
         protected override void OnStart()

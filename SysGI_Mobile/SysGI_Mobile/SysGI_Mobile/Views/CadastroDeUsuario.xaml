@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Visual="Material"
+<ContentPage 
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -23,8 +23,9 @@
             <Entry Placeholder="Telefone" Keyboard="Telephone" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
             <Entry Placeholder="E-mail" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
             <Entry Placeholder="Confirmar E-mail" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Entry IsPassword="False" Placeholder="Senha" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Entry Placeholder="Confirmar Senha" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" IsPassword="True" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Entry IsPassword="True" Placeholder="Senha" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Entry IsPassword="True" Placeholder="Confirmar Senha"  FontSize="20" TextColor="White" PlaceholderColor="White"  ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
+            <Label></Label>
             <Button Text="SALVAR" TextColor="Black" CornerRadius="10" WidthRequest="200" BackgroundColor="White" FontAttributes="Bold" FontSize="18" HeightRequest="50"></Button>
         </StackLayout>
     </StackLayout>
