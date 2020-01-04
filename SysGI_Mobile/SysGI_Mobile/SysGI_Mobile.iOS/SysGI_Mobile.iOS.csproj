@@ -135,4 +135,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\balanca.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Voltar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_anexo.png" />
+  </ItemGroup>
 </Project>
