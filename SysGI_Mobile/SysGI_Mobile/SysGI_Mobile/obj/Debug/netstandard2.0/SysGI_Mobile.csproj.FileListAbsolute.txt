@@ -25,3 +25,4 @@ C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\D
 C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\ref\SysGI_Mobile.dll
 C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\SysGI_Mobile.pdb
 C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\Views\CadastroDeUsuario.xaml.g.cs
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile\obj\Debug\netstandard2.0\Views\Menu.xaml.g.cs

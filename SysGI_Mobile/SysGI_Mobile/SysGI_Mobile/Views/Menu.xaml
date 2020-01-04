@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SysGI_Mobile.Views.Menu">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20,30,20,0" BackgroundColor="Crimson">
+            <Label Text="INÍCIO" FontSize="45" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"></Label>
+            <AbsoluteLayout>
+                <Image Source="balanca.png"  AbsoluteLayout.LayoutBounds="0,50" ></Image>
+                <Button Text="CADASTRAR" Grid.Row="0" Grid.Column="0" CornerRadius="10" TextColor="Crimson" BackgroundColor="Gainsboro" AbsoluteLayout.LayoutBounds="0,155"></Button>
+                <Button Text="CONSULTAR" Grid.Row="0" Grid.Column="0" CornerRadius="10" TextColor="Crimson" BackgroundColor="Gainsboro" AbsoluteLayout.LayoutBounds="218,155"></Button>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

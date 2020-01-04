@@ -10,7 +10,7 @@ namespace SysGI_Mobile
         {
             InitializeComponent();
 
-            MainPage = new CadastroDeUsuario();
+            MainPage = new Views.Menu();
         }
 
         protected override void OnStart()

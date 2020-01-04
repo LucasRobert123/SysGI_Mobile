@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SysGI_Mobile.Views.CadastroDeMenor"
+             BackgroundColor="Crimson">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"  Padding="10,20,10,20">
+            <Label Text="CADASTRO DE MENOR" TextColor="White" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+            <Frame CornerRadius="10" Padding="10">
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="15" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Informações pessoais" FontSize="Medium" FontAttributes="Bold" TextColor="Maroon" Grid.Row="0" Grid.Column="0"></Label>
+                    <Entry  Text="Nome" Placeholder="Nome"  PlaceholderColor="Maroon"  FontSize="Medium"                 Grid.Row="1" Grid.Column="0"></Entry>
+                </Grid>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

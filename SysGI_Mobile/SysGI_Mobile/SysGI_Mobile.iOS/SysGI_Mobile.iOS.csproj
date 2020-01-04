@@ -132,4 +132,7 @@
       <Name>SysGI_Mobile</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\balanca.png" />
+  </ItemGroup>
 </Project>

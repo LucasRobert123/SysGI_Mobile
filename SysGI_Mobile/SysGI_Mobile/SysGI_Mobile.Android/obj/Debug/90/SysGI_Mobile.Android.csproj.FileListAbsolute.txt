@@ -944,3 +944,4 @@ C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile.Andro
 C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
+C:\Users\Usuario\Desktop\SysGIMovel\SysGI_Mobile\SysGI_Mobile\SysGI_Mobile.Android\obj\Debug\90\res\drawable\balanca.png
