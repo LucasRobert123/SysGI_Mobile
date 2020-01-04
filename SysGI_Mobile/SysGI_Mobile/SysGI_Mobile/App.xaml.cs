@@ -10,7 +10,7 @@ namespace SysGI_Mobile
         {
             InitializeComponent();
 
-            MainPage = new Views.Menu();
+            MainPage = new Views.CadastroDeMenor();
         }
 
         protected override void OnStart()

@@ -7,29 +7,53 @@
              x:Class="SysGI_Mobile.Views.CadastroDeMenor"
              BackgroundColor="Crimson">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical"  Padding="10,20,10,20">
-            <Label Text="CADASTRO DE MENOR" TextColor="White" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
-            <Frame CornerRadius="10" Padding="10">
-                <Grid BackgroundColor="White">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="15" />
-                        <RowDefinition Height="45" />
-                        <RowDefinition Height="15" />
-                        <RowDefinition Height="15" />
-                        <RowDefinition Height="15" />
-                        <RowDefinition Height="15" />
-                        <RowDefinition Height="15" />
-                        <RowDefinition Height="15" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Informações pessoais" FontSize="Medium" FontAttributes="Bold" TextColor="Maroon" Grid.Row="0" Grid.Column="0"></Label>
-                    <Entry  Text="Nome" Placeholder="Nome"  PlaceholderColor="Maroon"  FontSize="Medium"                 Grid.Row="1" Grid.Column="0"></Entry>
-                </Grid>
-            </Frame>
-            
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Orientation="Vertical"  Padding="10,20,10,20">
+                <Label Text="CADASTRO DE MENOR" TextColor="White" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+                <Frame CornerRadius="10" Padding="10" Margin="0,10,0,0">
+                    <Grid BackgroundColor="White" ColumnSpacing="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160" />
+                            <ColumnDefinition Width="160"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Informações Pessoais" FontSize="15" FontAttributes="Bold" TextColor="Maroon" Grid.Row="0" Grid.Column="0"></Label>
+                        <Entry  Placeholder="Nome"  PlaceholderColor="Maroon" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0"></Entry>
+                        <Entry  Placeholder="Nome da Mãe"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="1" Grid.Column="1"></Entry>
+                        <Entry  Placeholder="Cpf"  PlaceholderColor="Maroon" FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="2" Grid.Column="0"></Entry>
+                        <Entry  Placeholder="Rg"  PlaceholderColor="Maroon" FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="2" Grid.Column="1"></Entry>
+                        <DatePicker MinimumDate="01/01/1900" Grid.Row="3" FontAttributes="Bold" Grid.Column="0" WidthRequest="150" TextColor="Maroon" Format="dd/MM/yyyy"></DatePicker>
+                        <Entry  Placeholder="Sexo"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="3" Grid.Column="1"></Entry>
+                        <Entry  Placeholder="Logradouro"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="5" Grid.Column="0"></Entry>
+                        <Entry  Placeholder="N°"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="5" Grid.Column="1"></Entry>
+                        <Entry  Placeholder="Bairro"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="6" Grid.Column="0"></Entry>
+                        <Entry  Placeholder="Cidade"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="6" Grid.Column="1"></Entry>
+                        <Entry  Placeholder="Cep"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="7" Grid.Column="0"></Entry>
+                        <Entry  Placeholder="Uf"  PlaceholderColor="Maroon"  FontAttributes="Bold" FontSize="Medium" WidthRequest="150"   Grid.Row="7" Grid.Column="1"></Entry>
+                    </Grid>
+                </Frame>
+                <Frame CornerRadius="10" Margin="0,10,0,0" Padding="10">
+                    <StackLayout>
+                        <Label Text="Informações da Infração" TextColor="Maroon" FontSize="15" FontAttributes="Bold"></Label>
+                        <Label Text="Data:" TextColor="Maroon" FontSize="15" FontAttributes="Bold"></Label>
+                        <DatePicker TextColor="Maroon" FontAttributes="Bold"></DatePicker>
+                        <Label Text="Descrição:" TextColor="Maroon" FontSize="15" FontAttributes="Bold"></Label>
+                        <Editor FontSize="Medium" HeightRequest="50"></Editor>
+                    </StackLayout>
+                 </Frame>
+                <StackLayout>
+                    <Button Text="SALVAR" CornerRadius="10" TextColor="Maroon" FontAttributes="Bold" FontSize="Title"></Button>
+                </StackLayout>
+            </StackLayout>
+       </ScrollView>
     </ContentPage.Content>
 </ContentPage>
