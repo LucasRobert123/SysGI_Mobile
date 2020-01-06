@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SysGI_Mobile.Views.MENU.xaml", "Views/MENU.xaml", typeof(global::SysGI_Mobile.Views.MENU))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SysGI_Mobile.Views.Menu.xaml", "Views/Menu.xaml", typeof(global::SysGI_Mobile.Views.MENU))]
 
 namespace SysGI_Mobile.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MENU.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Menu.xaml")]
     public partial class MENU : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

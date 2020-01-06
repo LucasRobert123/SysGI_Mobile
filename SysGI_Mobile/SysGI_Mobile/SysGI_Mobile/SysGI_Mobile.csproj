@@ -18,6 +18,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="images\balanca.png" />
     <None Remove="images\edit-icon.png" />
     <None Remove="images\logoff.png" />
@@ -60,6 +66,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Views_Models\" />
   </ItemGroup>
 </Project>
