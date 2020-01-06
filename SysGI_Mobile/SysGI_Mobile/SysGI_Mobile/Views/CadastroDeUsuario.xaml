@@ -17,7 +17,7 @@
                           >
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
                 <Label HorizontalOptions="FillAndExpand" Text="CADASTRO DE USUÁRIO" Style="{StaticResource LblSubTitle}"></Label>
-                <Picker Title="CATEGORIA" Style="{StaticResource PikPrimary}">
+                <Picker x:Name="Credencial_User" Title="CATEGORIA" Style="{StaticResource PikPrimary}">
                     <Picker.Items>
                         <x:String>JUIZ</x:String>
                         <x:String>ADVOGADO</x:String>
@@ -27,10 +27,12 @@
                         <x:String>DELEGADO</x:String>
                     </Picker.Items>
                 </Picker>
-                <Entry Placeholder="Telefone" Keyboard="Telephone" Style="{StaticResource EntryPrimary}"></Entry>
-                <Entry Placeholder="E-mail" Keyboard="Email" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry x:Name="Name_User" Placeholder="Usuário" Style="{StaticResource EntryPrimary}"></Entry>
+                <!--<Entry x:Name="Identification_User" Placeholder="Inscrição ou Matrícula" Style="{StaticResource EntryPrimary}"></Entry>--> 
+                <Entry x:Name="Telephone_User" Placeholder="Telefone" Keyboard="Telephone" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry x:Name="Email_User" Placeholder="E-mail" Keyboard="Email" Style="{StaticResource EntryPrimary}"></Entry>
                 <Entry Placeholder="Confirmar E-mail" Keyboard="Email" Style="{StaticResource EntryPrimary}"></Entry>
-                <Entry IsPassword="True" Placeholder="Senha" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry x:Name="Password_User" IsPassword="True" Placeholder="Senha" Style="{StaticResource EntryPrimary}"></Entry>
                 <Entry IsPassword="True" Placeholder="Confirmar Senha" Style="{StaticResource EntryPrimary}"></Entry>
                 <Button Text="SALVAR" Style="{StaticResource BtnSecundary}" HorizontalOptions="FillAndExpand" Clicked="Btn_Salvar_Click"></Button>
 
