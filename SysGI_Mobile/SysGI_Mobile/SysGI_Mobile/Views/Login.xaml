@@ -3,42 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SysGI_Mobile.Renderers"
+             xmlns:behaviors="clr-namespace:SysGI_Mobile.Behaviors"
+             NavigationPage.HasNavigationBar="false"
              mc:Ignorable="d"
              x:Class="SysGI_Mobile.Views.Login">
 
+    <ContentPage.Content>
+        <local:GradientLayout ColorsList="#2A0000,#DC143C"
+                          Mode="ToTopLeft"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          Orientation="Vertical"
+                          >
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Label HorizontalOptions="CenterAndExpand" Text="{StaticResource AppName}" Style="{StaticResource LblTitle}"></Label>
 
-    <StackLayout  Padding="20,80,10,10"	
-                      HorizontalOptions="FillAndExpand"
-                      BackgroundColor="Crimson">
-        <StackLayout Orientation="Horizontal">
-            
-            <Label HorizontalOptions="CenterAndExpand" Text="SysGI" TextColor="White" FontFamily="Century Gothic" FontAttributes="Bold">
-                <Label.FontSize>
-                    <OnPlatform	x:TypeArguments="x:Double">
-                        <On	Platform="iOS">45</On>
-                        <On	Platform="Android">40</On>
-                    </OnPlatform>
-                </Label.FontSize>
-            </Label>
-        </StackLayout>
-        <StackLayout Padding="0,30,0,0" HorizontalOptions="FillAndExpand">
-            <Label  Text="Usuario" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"></Label>
-            <Entry  FontSize="Medium" WidthRequest="300" HorizontalOptions="CenterAndExpand"  ClearButtonVisibility="WhileEditing"></Entry>
-            <Label  Text="Senha" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"></Label >
-            <Entry FontSize="Medium" WidthRequest="300" HorizontalOptions="CenterAndExpand" IsPassword="True" ClearButtonVisibility="WhileEditing"></Entry>
-        </StackLayout>
-        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-            <CheckBox Color="White"></CheckBox>
-            <Label Text="Manter-se conectado" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="0,3,0,0"></Label>
-        </StackLayout>
-        <StackLayout Orientation="Vertical" Padding="0,20,0,0" >
-            <Button Text="LOGAR" BackgroundColor="White" HorizontalOptions="Center" WidthRequest="300" BorderRadius="10" FontSize="18" FontAttributes="Bold"></Button>
-        </StackLayout>
-        <StackLayout Padding="0,50,0,0">
-            <Label Text="Solicitar login" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium"></Label>
-        </StackLayout>
+                <Entry  Style="{StaticResource EntryPrimary}" Placeholder="Nome de Usuário" HorizontalOptions="FillAndExpand">
+                    <Entry.Behaviors>
+                        <behaviors:EntryMaxLength MaxLength="50"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry Style="{StaticResource EntryPrimary}" Placeholder="Senha" HorizontalOptions="FillAndExpand" IsPassword="True">
+                    <Entry.Behaviors>
+                        <behaviors:EntryMaxLength MaxLength="10" />
+                    </Entry.Behaviors>
+                </Entry>
+                <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Padding="0,5,0,5">
+                    <CheckBox Color="White" VerticalOptions="Center"></CheckBox>
+                    <Label Text="Manter-se conectado" TextColor="White" FontFamily="{StaticResource Bold}" FontSize="Medium" VerticalTextAlignment="Center"></Label>
+                </StackLayout>
+                <Button Text="LOGAR" HorizontalOptions="FillAndExpand" Style="{StaticResource BtnSecundary}" Clicked="Btn_Login_Click"></Button>
+                <Button Text="Solicitar Login!" HorizontalOptions="FillAndExpand" Style="{StaticResource BtnTrasparent}" Clicked="Btn_Cadastrar_Click"></Button>
 
-    </StackLayout>
+                <Label Text="{Binding Rodape}" Style="{StaticResource LblRodape}"></Label>
+            </StackLayout>
 
-
+        </local:GradientLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -62,11 +62,14 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GradientLayoutRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\CenturyGothicRegular.ttf" />
+    <BundleResource Include="Resources\CenturyGothicBold.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -131,14 +134,5 @@
       <Project>{4476BDF1-E4F7-47EB-A4BC-36B4D9AEA5B5}</Project>
       <Name>SysGI_Mobile</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\balanca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Voltar2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\icon_anexo.png" />
   </ItemGroup>
 </Project>

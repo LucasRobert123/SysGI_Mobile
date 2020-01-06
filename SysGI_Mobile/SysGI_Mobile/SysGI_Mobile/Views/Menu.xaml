@@ -1,18 +1,40 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SysGI_Mobile.Renderers"
+             xmlns:img="clr-namespace:SysGI_Mobile"
+             NavigationPage.HasNavigationBar="false"
              mc:Ignorable="d"
-             x:Class="SysGI_Mobile.Views.Menu">
+             x:Class="SysGI_Mobile.Views.MENU">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="20,30,20,0" BackgroundColor="Crimson">
-            <Label Text="INÍCIO" FontSize="45" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"></Label>
-            <AbsoluteLayout>
-                <Image Source="balanca.png"  AbsoluteLayout.LayoutBounds="0,50" ></Image>
-                <Button Text="CADASTRAR" Grid.Row="0" Grid.Column="0" CornerRadius="10" TextColor="Crimson" BackgroundColor="Gainsboro" AbsoluteLayout.LayoutBounds="0,155"></Button>
-                <Button Text="CONSULTAR" Grid.Row="0" Grid.Column="0" CornerRadius="10" TextColor="Crimson" BackgroundColor="Gainsboro" AbsoluteLayout.LayoutBounds="218,155"></Button>
-            </AbsoluteLayout>
-        </StackLayout>
+        <AbsoluteLayout>
+            <local:GradientLayout ColorsList="#2A0000,#DC143C"
+                          Mode="ToTopLeft"
+                          Orientation="Vertical"
+                          AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                          BackgroundColor="Crimson"/>
+            <Image BackgroundColor="Transparent" Source="{img:ImageResource SysGI_Mobile.images.balanca.png}"
+                   HeightRequest="100" WidthRequest="100" Margin="30,30"
+                   Aspect="AspectFit"
+                   AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Label Style="{StaticResource LblSubTitle}" Text="INICIO" HorizontalOptions="FillAndExpand"/>
+                <Label Style="{StaticResource LblWhite}" FontFamily="{StaticResource Regular}" Text="{Binding MenuFrase}" HorizontalOptions="FillAndExpand"/>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <Button Style="{StaticResource BtnSecundary}" FontSize="Medium" Margin="30,0,0,0" HorizontalOptions="StartAndExpand" Text="Cadastrar" Clicked="Btn_Cadastrar_Click"></Button>
+                    <Button Style="{StaticResource BtnSecundary}" FontSize="Medium" Margin="0,0,30,0" HorizontalOptions="EndAndExpand" Text="Consultar" Clicked="Btn_Consultar_Click"></Button>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0,0,0,30">
+                    <Label Text="Notificações:" Style="{StaticResource LblWhite}" VerticalTextAlignment="Center" FontFamily="{StaticResource Regular}" />
+                    <Switch></Switch>
+                </StackLayout>
+            </StackLayout>
+            <ImageButton Source="{img:ImageResource SysGI_Mobile.images.logoff.png}" Clicked="Btn_Logoff_Click"
+                         VerticalOptions="Center" BackgroundColor="Transparent"
+                         HeightRequest="30" WidthRequest="30" Margin="0,0,30,30"
+                    AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        </AbsoluteLayout>        
     </ContentPage.Content>
 </ContentPage>

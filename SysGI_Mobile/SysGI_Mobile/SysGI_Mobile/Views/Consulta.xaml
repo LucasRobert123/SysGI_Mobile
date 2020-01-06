@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SysGI_Mobile.Renderers"
+             xmlns:img="clr-namespace:SysGI_Mobile"
+             NavigationPage.HasNavigationBar="false"
+             mc:Ignorable="d"
+             x:Class="SysGI_Mobile.Views.Consulta">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <local:GradientLayout ColorsList="#800000,#DC143C"
+                                      Mode="ToTopLeft"
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="Start">
+
+                    <Label HorizontalOptions="FillAndExpand" Text="CONSULTA DE USUÁRIO" Style="{StaticResource LblSubTitle}"></Label>
+                </local:GradientLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="WhiteSmoke" >
+                    <Frame CornerRadius="10" Margin="30,25,30,0" Padding="0,0" BackgroundColor="#DC143C">
+                        <StackLayout HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="Última Infração" Style="{StaticResource LblWhite}" FontFamily="{StaticResource Bold}"></Label>
+                                    <Label Text="00/00/0000" Style="{StaticResource LblWhite}" FontFamily="{StaticResource Regular}"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="Status" Style="{StaticResource LblWhite}" FontFamily="{StaticResource Bold}"></Label>
+                                    <Label Text="Reincidente" Style="{StaticResource LblWhite}" FontFamily="{StaticResource Regular}"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                            <Frame CornerRadius="10" Margin="0,10,0,0" BackgroundColor="Snow">
+                                <StackLayout HorizontalOptions="FillAndExpand" MinimumHeightRequest="100" >
+                                    <StackLayout Orientation="Horizontal">
+                                        <StackLayout Orientation="Vertical">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Nome:" FontFamily="{StaticResource Bold}"></Label>
+                                                <Label Text="Nome do Infrator" FontFamily="{StaticResource Regular}"></Label>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="CPF:" FontFamily="{StaticResource Bold}"></Label>
+                                                <Label Text="000.000.000-00" FontFamily="{StaticResource Regular}"></Label>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="RG:" FontFamily="{StaticResource Bold}"></Label>
+                                                <Label Text="00.000.000" FontFamily="{StaticResource Regular}"></Label>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <ImageButton BackgroundColor="Transparent" Source="{img:ImageResource SysGI_Mobile.images.edit-icon.png}" WidthRequest="50" HeightRequest="50" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></ImageButton>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="30,10,30,30" Padding="0">
+                        <ScrollView Margin="10,0">
+                            <StackLayout Orientation="Vertical" Padding="0,5" Spacing="10">
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Infração:" FontFamily="{StaticResource Bold}"></Label>
+                                        <Label Text="Descrição da Infração" FontFamily="{StaticResource Regular}"></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Data:" FontFamily="{StaticResource Bold}"></Label>
+                                        <Label Text="00/00/0000" FontFamily="{StaticResource Regular}"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+            <Frame CornerRadius="10" BackgroundColor="#800000" HorizontalOptions="Start" Padding="10,0,30,0" HeightRequest="48"
+                   AbsoluteLayout.LayoutBounds="30,70,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="None">
+                <Label Text="RG" TextColor="White" FontFamily="{StaticResource Bold}"
+                       VerticalTextAlignment="Center" FontSize="Large" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <SearchBar Placeholder="Pesquisar Infrator" Style="{StaticResource BarPrimary}" HorizontalOptions="FillAndExpand" Margin="0,0,105,0"
+                       AbsoluteLayout.LayoutBounds="75,70,1, AutoSize" AbsoluteLayout.LayoutFlags="WidthProportional"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -6,6 +6,118 @@
              mc:Ignorable="d"
              x:Class="SysGI_Mobile.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Regular">
+                <On Platform="Android" Value="CenturyGothicRegular.ttf#Century Gothic" />
+                <On Platform="iOS" Value="CenturyGothicRegular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Bold">
+                <On Platform="Android" Value="CenturyGothicBold.ttf#Century Gothic" />
+                <On Platform="iOS" Value="CenturyGothicBold" />
+            </OnPlatform>
+            <x:String x:Key="AppName">SysGI</x:String>
 
+            <Style x:Key="LblTitle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource Bold}"/>
+                <Setter Property="Margin" Value="30,60"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Header"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="LblSubTitle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource Bold}"/>
+                <Setter Property="Margin" Value="30"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="LblRodape" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="Margin" Value="30,40"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+            </Style>
+            <Style x:Key="LblWhite" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="BtnPrimary" TargetType="Button">
+                <Setter Property="Margin" Value="30,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Bold}"/>
+                <Setter Property="TextColor" Value="WhiteSmoke"/>
+                <Setter Property="BackgroundColor" Value="#800000"/>
+                <Setter Property="BorderRadius" Value="10"/>
+                <Setter Property="FontSize" Value="Large"/>
+            </Style>
+            <Style x:Key="BtnSecundary" TargetType="Button">
+                <Setter Property="Margin" Value="30,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Bold}"/>
+                <Setter Property="TextColor" Value="#800000"/>
+                <Setter Property="BackgroundColor" Value="WhiteSmoke"/>
+                <Setter Property="BorderRadius" Value="10"/>
+                <Setter Property="FontSize" Value="Large"/>
+            </Style>
+            <Style x:Key="BtnTrasparent" TargetType="Button">
+                <Setter Property="Margin" Value="30,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Bold}"/>
+                <Setter Property="TextColor" Value="WhiteSmoke"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="EntryPrimary" TargetType="Entry">
+                <Setter Property="Margin" Value="30,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="TextColor" Value="WhiteSmoke"/>
+                <Setter Property="PlaceholderColor" Value="Gainsboro"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+            </Style>
+            <Style x:Key="EntrySecundary" TargetType="Entry">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="TextColor" Value="#800000"/>
+                <Setter Property="PlaceholderColor" Value="#AA5555"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+            </Style>
+
+            <Style x:Key="EditorSecundary" TargetType="Editor">
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="TextColor" Value="#800000"/>
+                <Setter Property="PlaceholderColor" Value="#AA5555"/>
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+
+            <Style x:Key="BarPrimary" TargetType="SearchBar">
+                <Setter Property="Margin" Value="0,0,30,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="TextColor" Value="#DC143C"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="PlaceholderColor" Value="#E7627D"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="CancelButtonColor" Value="#DC143C"/>
+            </Style>
+
+            <Style x:Key="DatePrimary" TargetType="DatePicker">
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="TextColor" Value="#800000"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+
+            <Style x:Key="PikPrimary" TargetType="Picker">
+                <Setter Property="Margin" Value="30,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+                <Setter Property="TextColor" Value="WhiteSmoke"/>
+                <Setter Property="TitleColor" Value="Gainsboro"/>
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

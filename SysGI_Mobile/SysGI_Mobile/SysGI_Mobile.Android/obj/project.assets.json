@@ -1932,24 +1932,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\adrie\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
+      "projectUniqueName": "C:\\Cods\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
       "projectName": "SysGI_Mobile.Android",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\obj\\",
+      "projectPath": "C:\\Cods\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\SysGI_Mobile.Android.csproj",
+      "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
+      "outputPath": "C:\\Cods\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1963,8 +1963,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\SysGIMovel\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj"
+            "C:\\Cods\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj": {
+              "projectPath": "C:\\Cods\\LucasRobert123\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile\\SysGI_Mobile.csproj"
             }
           }
         }

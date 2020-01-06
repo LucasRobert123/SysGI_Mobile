@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <PackageId>SysGI_Mobile</PackageId>
+    <Authors>AdrielDev; Lucas Robert; Beatriz Morita; Celso de Ávila</Authors>
+    <Company>UNIFENAS</Company>
+    <Product>SysGI_Mobile</Product>
+    <AssemblyName>SysGI_Mobile</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>SysGI_Key.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -11,21 +18,42 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\balanca.png" />
+    <None Remove="images\edit-icon.png" />
+    <None Remove="images\logoff.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\balanca.png" />
+    <EmbeddedResource Include="images\edit-icon.png" />
+    <EmbeddedResource Include="images\logoff.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\CadastroDeMenor.xaml">
+    <Compile Update="Views\CadastroInfrator.xaml.cs">
+      <DependentUpon>CadastroInfrator.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\CadastroInfrator.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\CadastroDeUsuario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Consulta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Menu.xaml">
+    <EmbeddedResource Update="Views\MENU.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

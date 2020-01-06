@@ -4,32 +4,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SysGI_Mobile.Renderers"
+             NavigationPage.HasNavigationBar="false"
              mc:Ignorable="d"
              x:Class="SysGI_Mobile.Views.CadastroDeUsuario">
+    <ContentPage.Content>
+        <local:GradientLayout ColorsList="#2A0000,#DC143C"
+                          Mode="ToTopLeft"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          Orientation="Vertical"
+                          >
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Label HorizontalOptions="FillAndExpand" Text="CADASTRO DE USUÁRIO" Style="{StaticResource LblSubTitle}"></Label>
+                <Picker Title="CATEGORIA" Style="{StaticResource PikPrimary}">
+                    <Picker.Items>
+                        <x:String>JUIZ</x:String>
+                        <x:String>ADVOGADO</x:String>
+                        <x:String>PROFESSOR</x:String>
+                        <x:String>PROMOTOR</x:String>
+                        <x:String>POLICIAL</x:String>
+                        <x:String>DELEGADO</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry Placeholder="Telefone" Keyboard="Telephone" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry Placeholder="E-mail" Keyboard="Email" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry Placeholder="Confirmar E-mail" Keyboard="Email" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry IsPassword="True" Placeholder="Senha" Style="{StaticResource EntryPrimary}"></Entry>
+                <Entry IsPassword="True" Placeholder="Confirmar Senha" Style="{StaticResource EntryPrimary}"></Entry>
+                <Button Text="SALVAR" Style="{StaticResource BtnSecundary}" HorizontalOptions="FillAndExpand" Clicked="Btn_Salvar_Click"></Button>
 
-    <StackLayout Padding="20,50,20,20" HorizontalOptions="Fill" BackgroundColor="Crimson">
-        <StackLayout Orientation="Vertical" Padding="30,0,30,0">
-            <Label HorizontalOptions="CenterAndExpand" Text="CADASTRO DE USUÁRIO" TextColor="White" FontAttributes="Bold" FontSize="25"></Label>
-            <Picker Title="CATEGORIA" TitleColor="White" FontSize="20" HeightRequest="70" TextColor="White">
-                <Picker.Items>
-                    <x:String>JUIZ</x:String>
-                    <x:String>ADVOGADO</x:String>
-                    <x:String>PROFESSOR</x:String>
-                    <x:String>PROMOTOR</x:String>
-                    <x:String>POLICIAL</x:String>
-                    <x:String>DELEGADO</x:String>
-                </Picker.Items>
-            </Picker>
-            <Entry Placeholder="Telefone" Keyboard="Telephone" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Entry Placeholder="E-mail" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Entry Placeholder="Confirmar E-mail" Keyboard="Email" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Entry IsPassword="True" Placeholder="Senha" FontSize="20" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Entry IsPassword="True" Placeholder="Confirmar Senha"  FontSize="20" TextColor="White" PlaceholderColor="White"  ClearButtonVisibility="WhileEditing" HeightRequest="70"></Entry>
-            <Label></Label>
-            <Button Text="SALVAR" TextColor="Black" CornerRadius="10" WidthRequest="200" BackgroundColor="White" FontAttributes="Bold" FontSize="18" HeightRequest="50"></Button>
-        </StackLayout>
-    </StackLayout>
-
-
+                <Label Text="{Binding Rodape}" Style="{StaticResource LblRodape}"></Label>
+            </StackLayout>
+        </local:GradientLayout>
+    </ContentPage.Content>
 
 </ContentPage>

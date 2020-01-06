@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SysGI_Mobile.Renderers"
+             xmlns:img="clr-namespace:SysGI_Mobile"
+             NavigationPage.HasNavigationBar="false"
+             mc:Ignorable="d"
+             x:Class="SysGI_Mobile.Views.CadastroInfrator">
+    <ContentPage.Content>
+        <local:GradientLayout ColorsList="#2A0000,#DC143C"
+                              Mode="ToTopLeft"
+                              HorizontalOptions="FillAndExpand"
+                              VerticalOptions="FillAndExpand"
+                              Orientation="Vertical"
+                              BackgroundColor="Crimson">
+            <Label HorizontalOptions="FillAndExpand" Text="CADASTRO DE INFRATOR" Style="{StaticResource LblSubTitle}" Margin="30,10"></Label>
+            <Frame CornerRadius="5" Margin="30,10,30,0" BackgroundColor="White">
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Entry Style="{StaticResource EntrySecundary}" Placeholder="Nome"></Entry>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="RG" HorizontalOptions="FillAndExpand"></Entry>
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="CPF" HorizontalOptions="FillAndExpand"></Entry>
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="Sexo" HorizontalOptions="End"></Entry>
+                    </StackLayout>
+                    
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="Mãe" HorizontalOptions="FillAndExpand"></Entry>
+                        <DatePicker Style="{StaticResource DatePrimary}" HorizontalOptions="End"></DatePicker>
+                    </StackLayout>
+                    <Entry Style="{StaticResource EntrySecundary}" Placeholder="Logradouro"></Entry>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="Bairro" HorizontalOptions="FillAndExpand"></Entry>
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="Número" HorizontalOptions="End"></Entry>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="Cidade" HorizontalOptions="FillAndExpand"></Entry>
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="UF" HorizontalOptions="End"></Entry>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="5" Margin="30,10" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Entry Style="{StaticResource EntrySecundary}" Placeholder="Descrição" HorizontalOptions="FillAndExpand"></Entry>
+                        <DatePicker Style="{StaticResource DatePrimary}" HorizontalOptions="End"></DatePicker>
+                    </StackLayout>
+                    <Editor Style="{StaticResource EditorSecundary}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="30,0,30,30">
+                <Button Style="{StaticResource BtnSecundary}" Margin="0" Text="CANCELAR" HorizontalOptions="FillAndExpand" Clicked="Btn_Cancelar_Click"/>
+                <Button Style="{StaticResource BtnPrimary}" Margin="0" Text="SALVAR" HorizontalOptions="FillAndExpand" Clicked="Btn_Salvar_Click"/>
+            </StackLayout>
+        </local:GradientLayout>
+    </ContentPage.Content>
+</ContentPage>
