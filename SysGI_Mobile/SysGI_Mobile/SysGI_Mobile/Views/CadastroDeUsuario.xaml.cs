@@ -29,7 +29,7 @@ namespace SysGI_Mobile.Views
             user.Telefone = Telephone_User.Text;
             user.Email = Email_User.Text;
             user.Passpassword = Password_User.Text;
-            Data_Controller.Add_User(user);
+            Controller.Add_User(user);
             
             await Navigation.PopAsync();
         }
