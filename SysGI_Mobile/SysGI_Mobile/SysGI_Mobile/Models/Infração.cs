@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,10 +13,8 @@ namespace SysGI_Mobile.Models
 
         private string id;
 
-        public Infração() { /*Id = ObjectId.GenerateNewId();*/ }
-
-        //[BsonId]
-        //[BsonRepresentation(BsonType.ObjectId)]
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get => id; set => id = value; }
         public string Descrição { get => descrição; set => descrição = value; }
         public DateTime Data_ocorrência { get => data_ocorrência; set => data_ocorrência = value; }

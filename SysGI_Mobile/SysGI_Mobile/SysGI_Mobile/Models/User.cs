@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,8 +11,8 @@ namespace SysGI_Mobile.Models
         private string id, nome, email, telefone, passpassword;
         private int credencial;
 
-        //[BsonId]
-        //[BsonRepresentation(BsonType.ObjectId)]
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get => id; set => id = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Email { get => email; set => email = value; }

@@ -3,7 +3,13 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "SysGI_Mobile.Android.dll" comes first in this list. */
 		"SysGI_Mobile.Android.dll",
+		"DnsClient.dll",
 		"FormsViewGroup.dll",
+		"MongoDB.Bson.dll",
+		"MongoDB.Driver.Core.dll",
+		"MongoDB.Driver.dll",
+		"MongoDB.Libmongocrypt.dll",
+		"SharpCompress.dll",
 		"SysGI_Mobile.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
