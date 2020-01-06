@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SysGI_Mobile.Services
 {
@@ -9,14 +10,25 @@ namespace SysGI_Mobile.Services
     {
         public static User user_logged;
 
-        public void Add(User item)
+        public static void Save_Login(User user)
         {
-            throw new NotImplementedException();
+
+        }
+        public static void Reset_Login()
+        {
+            
         }
 
-        public void Delete(User item)
+        public async Task<bool> Add(User user)
         {
-            throw new NotImplementedException();
+            await Network.Collection_users.InsertOneAsync(user);
+            return true;
+        }
+
+        public async Task<bool> Delete(User user)
+        {
+            //await Network.Collection_users.DeleteOneAsync(u => u.Id == user.Id);
+            return true;
         }
 
         public IEnumerable<User> GetAll()
@@ -29,7 +41,7 @@ namespace SysGI_Mobile.Services
             throw new NotImplementedException();
         }
 
-        public void Update(User item)
+        public async Task<bool> Update(User user)
         {
             throw new NotImplementedException();
         }

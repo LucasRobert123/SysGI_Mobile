@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysGI_Mobile.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,12 @@ namespace SysGI_Mobile.Views
         public Login()
         {
             InitializeComponent();
+
+            if (!Network.Connect())
+            {
+                DisplayAlert("Sucesso:", "Conectado ao Mongo!", "OK");
+            }
+
             BindingContext = this;
         }
 

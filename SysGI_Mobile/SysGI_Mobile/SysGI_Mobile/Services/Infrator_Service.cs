@@ -2,17 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SysGI_Mobile.Services
 {
     public class Infrator_Service : Interface<Infrator>
     {
-        public void Add(Infrator item)
+        public async Task<bool> Add(Infrator infrator)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Infrator item)
+        public async Task<bool> Delete(Infrator infrator)
         {
             throw new NotImplementedException();
         }
@@ -27,7 +28,7 @@ namespace SysGI_Mobile.Services
             throw new NotImplementedException();
         }
 
-        public void Update(Infrator item)
+        public async Task<bool> Update(Infrator infrator)
         {
             throw new NotImplementedException();
         }

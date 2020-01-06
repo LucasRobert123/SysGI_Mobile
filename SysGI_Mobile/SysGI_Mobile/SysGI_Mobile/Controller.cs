@@ -5,6 +5,8 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Linq;
 using SysGI_Mobile.Models;
+using System.Threading.Tasks;
+
 namespace SysGI_Mobile
 {
     public class Controller
@@ -19,25 +21,95 @@ namespace SysGI_Mobile
             Promotor = 5,
             Juiz = 6
         }
-
         
-        public static bool keep_login, alow_notification = true;
-        public static string user_logged_save, path_anexos;
-        private static string path, path_data, path_infos, id_user_logged;
-        private static DateTime last_recheck;
+        private struct Responsavel
+        {
+            public string email;
+            public int categoria;
+        }
 
-        public static int tot_up = 0, tot_dow = 0, tot_up_ok = 0, tot_dow_ok = 0;
-        public static List<string> paths_anexos_offline,
-            uploading = new List<string>(),
-            downloading = new List<string>(),
-            Credenciais = new List<string>() { "INDEFINIDO", "PROFESSOR", "ADVOGADO", "POLICIAL", "DELEGADO", "PROMOTOR", "JUIZ" };
+        public static List<string> Credenciais = new List<string>() { "INDEFINIDO", "PROFESSOR", "ADVOGADO", "POLICIAL", "DELEGADO", "PROMOTOR", "JUIZ" };
+        public List<string> anexo_formats = new List<string>() { ".pdf", ".jpeg", ".jpg", ".png" };
+        private static List<Responsavel> responsaveis;
+
+        public static void Load_Responsaveis()
+        {
+            responsaveis = new List<Responsavel>();
+            responsaveis.Add(new Responsavel() { categoria = 1, email = "adrieldeveloper@hotmail.com" });
+            responsaveis.Add(new Responsavel() { categoria = 2, email = "lucasrobert994@gmail.com" });
+            responsaveis.Add(new Responsavel() { categoria = 3, email = "adrieldeveloper@hotmail.com" });
+            responsaveis.Add(new Responsavel() { categoria = 4, email = "lucasrobert994@gmail.com" });
+            responsaveis.Add(new Responsavel() { categoria = 5, email = "adrieldeveloper@hotmail.com" });
+        }
+
+        public static int[] podem_cadastrar = new int[4]
+        {
+            //(int)Credencial.Professor,
+            (int)Credencial.Advogado,
+            (int)Credencial.Policial,
+            (int)Credencial.Delegado,
+            //(int)Credencial.Promotor,
+            (int)Credencial.Juiz,
+        };
+        public static int[] podem_consultar = new int[6]
+        {
+            (int)Credencial.Professor,
+            (int)Credencial.Advogado,
+            (int)Credencial.Policial,
+            (int)Credencial.Delegado,
+            (int)Credencial.Promotor,
+            (int)Credencial.Juiz,
+        };
+        public static int[] podem_ver_perfil = new int[5]
+        {
+            //(int)Credencial.Professor,
+            (int)Credencial.Advogado,
+            (int)Credencial.Policial,
+            (int)Credencial.Delegado,
+            (int)Credencial.Promotor,
+            (int)Credencial.Juiz,
+        };
+        public static int[] podem_salvar_edição = new int[4]
+        {
+            //(int)Credencial.Professor,
+            (int)Credencial.Advogado,
+            (int)Credencial.Policial,
+            (int)Credencial.Delegado,
+            //(int)Credencial.Promotor,
+            (int)Credencial.Juiz,
+        };
+        public static int[] podem_ver_anexos = new int[5]
+        {
+            //(int)Credencial.Professor,
+            (int)Credencial.Advogado,
+            (int)Credencial.Policial,
+            (int)Credencial.Delegado,
+            (int)Credencial.Promotor,
+            (int)Credencial.Juiz,
+        };
+        public static int[] podem_editar_anexos = new int[5]
+        {
+            //(int)Credencial.Professor,
+            (int)Credencial.Advogado,
+            (int)Credencial.Policial,
+            (int)Credencial.Delegado,
+            (int)Credencial.Promotor,
+            (int)Credencial.Juiz,
+        };
+
+        public static void Show_Permission_Alert()
+        {
+            //Forms_Controller.pode_desconectar = false;
+            //MessageBox.Show("Infelizmente você não tem\npermissão para acessar\neste recurso no momento!", "Atenção:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //Forms_Controller.pode_desconectar = true;
+        }
     }
 
     public interface Interface<T>
     {
-        void Add(T item);
-        void Update(T item);
-        void Delete(T item);
+        Task<bool> Add(T item);
+        Task<bool> Update(T item);
+        Task<bool> Delete(T item);
         T GetById(string id);
         IEnumerable<T> GetAll();
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using SysGI_Mobile.Views;
+
 namespace SysGI_Mobile
 {
     public partial class App : Application

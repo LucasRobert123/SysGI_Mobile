@@ -2,17 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SysGI_Mobile.Services
 {
     public class Infração_Service : Interface<Infração>
     {
-        public void Add(Infração item)
+        public async Task<bool> Add(Infração infração)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Infração item)
+        public async Task<bool> Delete(Infração infração)
         {
             throw new NotImplementedException();
         }
@@ -27,7 +28,7 @@ namespace SysGI_Mobile.Services
             throw new NotImplementedException();
         }
 
-        public void Update(Infração item)
+        public async Task<bool> Update(Infração infração)
         {
             throw new NotImplementedException();
         }
